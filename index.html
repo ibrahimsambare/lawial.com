@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAWIAL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --main:#473144;
+    --red:#C3475F;
+    --orange:#D88A6A;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100%;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(135deg, #473144 0%, #AF1B3F 50%, #DF9B6D 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+/* Logo centré */
+.logo{
+    font-size:72px;
+    font-weight:700;
+    letter-spacing:8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation douce premium */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .logo{
+        font-size:42px;
+        letter-spacing:5px;
+    }
+}
+
+@media (min-width:1440px){
+    .logo{
+        font-size:96px;
+        letter-spacing:10px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="logo">
+    LAWIAL
+</div>
+
+</body>
+</html>
