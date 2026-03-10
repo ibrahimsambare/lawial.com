@@ -1,4 +1,8 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -6,27 +10,33 @@
 <meta name="description" content="LAWIAL arrive bientôt. De grandes choses se préparent.">
 
 <link rel="canonical" href="https://lawial.com/">
-<link rel="icon" href="https://lawial.com/preview-lawial.jpg">
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/favicon-32x32.png">
+<meta name="theme-color" content="#473144">
+
+<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lawial.com/">
 <meta property="og:title" content="LAWIAL — De grandes choses se préparent">
 <meta property="og:description" content="LAWIAL arrive bientôt. Une nouvelle vision se prépare.">
-<meta property="og:image" content="https://lawial.com/preview-lawial.jpg">
+<meta property="og:image" content="https://lawial.com/preview-lawial.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="LAWIAL">
 <meta property="og:locale" content="fr_FR">
 
+<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://lawial.com/">
 <meta name="twitter:title" content="LAWIAL — De grandes choses se préparent">
 <meta name="twitter:description" content="LAWIAL arrive bientôt. Une nouvelle vision se prépare.">
-<meta name="twitter:image" content="https://lawial.com/preview-lawial.jpg">
+<meta name="twitter:image" content="https://lawial.com/preview-lawial.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 :root {
     --main:#473144;
     --red:#C3475F;
@@ -45,20 +55,36 @@ html, body{
 
 body{
     font-family:'Inter',sans-serif;
-    background:linear-gradient(135deg, #473144 0%, #AF1B3F 50%, #DF9B6D 100%);
+    background:linear-gradient(135deg,#473144 0%,#AF1B3F 50%,#DF9B6D 100%);
     display:flex;
     align-items:center;
     justify-content:center;
     color:white;
 }
 
+/* Conteneur */
+.container{
+    text-align:center;
+}
+
+/* Logo */
 .logo{
     font-size:72px;
     font-weight:700;
     letter-spacing:8px;
-    animation: fadeIn 1s ease-in-out;
+    margin-bottom:20px;
+    animation:fadeIn 1s ease-in-out;
 }
 
+/* Teaser */
+.teaser{
+    font-size:18px;
+    opacity:0.9;
+    letter-spacing:2px;
+    animation:fadeIn 1.5s ease-in-out;
+}
+
+/* Animation */
 @keyframes fadeIn{
     from{
         opacity:0;
@@ -70,18 +96,48 @@ body{
     }
 }
 
+/* Mobile */
 @media (max-width:768px){
-    .logo{
-        font-size:42px;
-        letter-spacing:5px;
-    }
+
+.logo{
+    font-size:42px;
+    letter-spacing:5px;
 }
 
-@media (min-width:1440px){
-    .logo{
-        font-size:96px;
-        letter-spacing:10px;
-    }
+.teaser{
+    font-size:14px;
 }
+
+}
+
+/* Grand écran */
+@media (min-width:1440px){
+
+.logo{
+    font-size:96px;
+    letter-spacing:10px;
+}
+
+}
+
 </style>
+
 </head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+LAWIAL
+</div>
+
+<div class="teaser">
+De grandes choses se préparent.
+</div>
+
+</div>
+
+</body>
+
+</html>
